@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f6fb;
+  color: #1b1b1b;
+}
+main { max-width: 720px; margin: 0 auto; padding: 16px 16px 48px; }
+h1 { font-size: 1.6rem; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 0 0 8px; }
+p { line-height: 1.4; }
+button, input, select { font: inherit; }
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c8ceda;
+  border-radius: 10px;
+  background: white;
+}
+button {
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #243044;
+  color: white;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.55; cursor: default; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+.row > * { flex: 1; }
+.stack { display: grid; gap: 10px; }
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06);
+}
+.pin { font-size: 3rem; letter-spacing: .2em; text-align: center; margin: 8px 0; font-weight: 800; }
+.muted { color: #5c6575; font-size: .92rem; }
+.error { color: #9d1c1c; background: #fde8e8; padding: 8px 10px; border-radius: 8px; }
+.answers { display: grid; gap: 10px; }
+.answers button { min-height: 64px; font-weight: 700; font-size: 1.05rem; }
+.opt-0 { background: #e74c3c; }
+.opt-1 { background: #2980b9; }
+.opt-2 { background: #d4a017; color: #1b1b1b; }
+.opt-3 { background: #1e9e57; }
+.correct { outline: 4px solid #127a3a; }
+.wrong { outline: 4px solid #9d1c1c; }
+.bar-track { height: 14px; background: #e4e8f0; border-radius: 99px; overflow: hidden; }
+.bar-fill { height: 100%; width: 0; background: #243044; }
+.timer { font-size: 2rem; font-weight: 800; text-align: center; }
+ol.board { margin: 0; padding-left: 1.2rem; }
+ol.board li { margin: 6px 0; }
+.me { font-weight: 800; }
+.dist { display: grid; gap: 6px; }
+.dist .line { height: 28px; background: #e4e8f0; border-radius: 8px; overflow: hidden; }
+.dist .fill { height: 100%; color: white; padding: 4px 8px; white-space: nowrap; }
+.top { display: flex; justify-content: space-between; gap: 8px; align-items: center; }
+label { font-size: .85rem; color: #3c4454; display: grid; gap: 4px; }

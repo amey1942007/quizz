@@ -1,0 +1,6 @@
+{
+  "admin_username": "robo",
+  "password_salt": "quiz-live-robo-v1",
+  "password_iterations": 120000,
+  "password_hash": "17173eb0fddc7876f41631c6aff4067b069269f5c2415baf643744ee7584e143"
+}
