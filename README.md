@@ -46,4 +46,4 @@ Schema file: `supabase/schema.sql`
 
 Tables, the view, and the realtime publication are all named `quiz_*` so they do not touch the other app in the same project. The anon key can only read `quiz_scores` / `quiz_leaderboard`. The service-role key stays in `server/.env`.
 
-Pages settings: GitHub **Settings → Pages → Build and deployment → GitHub Actions**. The workflow uploads the `docs` folder.
+Pages settings: GitHub **Settings → Pages → Build and deployment → GitHub Actions**, then re-run the **Deploy GitHub Pages** workflow. The workflow uploads the `docs` folder. The repo token cannot turn Pages on by itself, so that settings click is required once.
